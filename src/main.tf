@@ -12,7 +12,12 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "terraform_state" {
-  bucket        = "demo-aws-terraform-state-12345lskd"
+resource "aws_s3_bucket" "aws_s3_demo_bucket_media" {
+  bucket        = "aws_s3_demo_bucket_media_ASDFLKJ1239794"
+  force_destroy = true
+}
+
+resource "aws_s3_bucket" "aws_s3_demo_bucket_storage" {
+  bucket        = "aws_s3_demo_bucket_storage_ASDFLKJ1239794"
   force_destroy = true
 }
