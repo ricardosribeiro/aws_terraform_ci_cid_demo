@@ -13,11 +13,11 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "aws_s3_demo_bucket_media" {
-  bucket        = "aws_s3_demo_bucket_media_ASDFLKJ1239794"
+  bucket        = "demo_bucket_media_2398"
   force_destroy = true
 }
 
 resource "aws_s3_bucket" "aws_s3_demo_bucket_storage" {
-  bucket        = "aws_s3_demo_bucket_storage_ASDFLKJ1239794"
+  bucket        = "demo_bucket_storage_2398"
   force_destroy = true
 }
